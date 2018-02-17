@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://java.sun.com/xml/ns/javaee" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Smart Portables</display-name>
+  <welcome-file-list>
+    <welcome-file>Home</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <servlet-name>Startup</servlet-name>
+    <servlet-class>Startup</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+  <servlet>
+    <servlet-name>Home</servlet-name>
+    <servlet-class>Home</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Home</servlet-name>
+    <url-pattern>/Home</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Registration</servlet-name>
+    <servlet-class>Registration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Registration</servlet-name>
+    <url-pattern>/Registration</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>Logout</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>PhoneList</servlet-name>
+    <servlet-class>PhoneList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PhoneList</servlet-name>
+    <url-pattern>/PhoneList</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>WatchList</servlet-name>
+    <servlet-class>WatchList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WatchList</servlet-name>
+    <url-pattern>/WatchList</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SpeakerList</servlet-name>
+    <servlet-class>SpeakerList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SpeakerList</servlet-name>
+    <url-pattern>/SpeakerList</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>HeadphoneList</servlet-name>
+    <servlet-class>HeadphoneList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HeadphoneList</servlet-name>
+    <url-pattern>/HeadphoneList</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LaptopList</servlet-name>
+    <servlet-class>LaptopList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LaptopList</servlet-name>
+    <url-pattern>/LaptopList</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>StorageList</servlet-name>
+    <servlet-class>StorageList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StorageList</servlet-name>
+    <url-pattern>/StorageList</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Cart</servlet-name>
+    <servlet-class>Cart</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Cart</servlet-name>
+    <url-pattern>/Cart</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RemoveItem</servlet-name>
+    <servlet-class>RemoveItem</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RemoveItem</servlet-name>
+    <url-pattern>/RemoveItem</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>CheckOut</servlet-name>
+    <servlet-class>CheckOut</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CheckOut</servlet-name>
+    <url-pattern>/CheckOut</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Account</servlet-name>
+    <servlet-class>Account</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Account</servlet-name>
+    <url-pattern>/Account</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteOrder</servlet-name>
+    <servlet-class>DeleteOrder</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteOrder</servlet-name>
+    <url-pattern>/DeleteOrder</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AccessoryList</servlet-name>
+    <servlet-class>AccessoryList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AccessoryList</servlet-name>
+    <url-pattern>/AccessoryList</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdateServlet</servlet-name>
+    <servlet-class>UpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateServlet</servlet-name>
+    <url-pattern>/UpdateServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>UpdateProduct</servlet-name>
+    <servlet-class>UpdateProduct</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateProduct</servlet-name>
+    <url-pattern>/UpdateProduct</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>DeleteProduct</servlet-name>
+    <servlet-class>DeleteProduct</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteProduct</servlet-name>
+    <url-pattern>/DeleteProduct</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>WriteReview</servlet-name>
+    <servlet-class>WriteReview</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WriteReview</servlet-name>
+    <url-pattern>/WriteReview</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ViewReviews</servlet-name>
+    <servlet-class>ViewReviews</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewReviews</servlet-name>
+    <url-pattern>/ViewReviews</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>MysqlError</servlet-name>
+    <servlet-class>MysqlError</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MysqlError</servlet-name>
+    <url-pattern>/MysqlError</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Trending</servlet-name>
+    <servlet-class>Trending</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Trending</servlet-name>
+    <url-pattern>/Trending</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Datavisualization</servlet-name>
+    <servlet-class>Datavisualization</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Datavisualization</servlet-name>
+    <url-pattern>/Datavisualization</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Inventory</servlet-name>
+    <servlet-class>Inventory</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Inventory</servlet-name>
+    <url-pattern>/Inventory</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SalesReport</servlet-name>
+    <servlet-class>SalesReport</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SalesReport</servlet-name>
+    <url-pattern>/SalesReport</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AutoCompleteServlet</servlet-name>
+    <servlet-class>AutoCompleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AutoCompleteServlet</servlet-name>
+    <url-pattern>/AutoCompleteServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>SearchedProductServlet</servlet-name>
+    <servlet-class>SearchedProductServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SearchedProductServlet</servlet-name>
+    <url-pattern>/SearchedProductServlet</url-pattern>
+  </servlet-mapping>
+
+  <error-page>
+    <error-code>500</error-code>
+    <location>/MysqlError</location>
+  </error-page>
+
+</web-app>

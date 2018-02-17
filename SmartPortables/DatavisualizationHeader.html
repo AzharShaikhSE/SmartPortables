@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Smart Portables - BarChart</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$.ajax({
+			url: 'Datavisualization',
+			dataType: 'JSON',
+			success: function(result){
+				alert(result);
+				//google.charts.load('visualization','1', { packages: ['barchart']});
+				//google.charts.setOnLoadCallback(drawChart(result));
+				google.charts.load('current', {packages: ['corechart', 'bar']});
+				google.charts.setOnLoadCallback(drawChart(result));
+			}
+		});
+
+		function drawChart(data){
+			alert('data'+data);
+			var chartData =  google.visualization.arrayToDataTable(data);
+
+			var options = {
+				chart: {
+					title: 'Trending Products in Cities Chart',
+					subtitle: 'abc',
+				},
+				hAxis: {
+          title: 'Total Products',
+          minValue: 0,
+        },
+        vAxis: {
+          title: 'City'
+        },
+				bars: 'horizontal'
+			};
+
+			var chart1 = new google.charts.Bar(document.getElementById('barchart_div'));
+			chart1.draw(chartData, options);
+		}
+
+	});
+	</script>
+
+	<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+
+<body>
+	<div id="logo">
+		<table>
+			<tr>
+				<td style="valign: top;"><img src="images/site/logo.png" alt=""
+					style="height: 40px" />
+				</td>
+				<td><h1>
+					<a href="#">Smart Portables</a>
+				</h1></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><p>
+					<em>Smart Choice. Less Price.</em>
+				</p>
+			</td>
+		</tr>
+	</table>
+</div>
+<hr />
+<!-- end #logo -->
+<div id="header">
+	<div id="menu">
+		<ul>
+			<li><a href="Home" class="first">Home</a>
+			</li>
+			<li><a href=#>About Us</a>
+			</li>
+			<li><a href=#>Contact Us</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<!-- end #menu -->
+
+<div id="barchart_div" style="border: 1px solid #ccc"></div>
+<p> hellozzzzzz</p>
+
+
+</body>
+</html>
